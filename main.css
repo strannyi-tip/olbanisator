@@ -1,0 +1,35 @@
+html, body {
+    background-color: rgb(234, 234, 234);
+}
+
+.container {
+    float: left;
+    width: 50vw;
+    height: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0  3px darkgray;
+    margin: 5vw 45vh;
+}
+
+textarea {
+    float: left;
+    width: calc(100% - 20px);
+    height: 200px;
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 10px;
+    resize: none;
+}
+
+button {
+    float: left;
+    padding: 7px;
+    border-radius: 3px;
+    border: none;
+    background-color: darkgreen;
+    color: lightgray;
+    margin-top: 10px;
+    cursor: pointer;
+}
