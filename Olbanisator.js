@@ -91,7 +91,7 @@ class Olbanisator {
             if (word.match(pattern)) {
                 const recovered = this._recoverPrint(print, replacement);
 
-                word.replace(pattern, recovered) + " ";
+               return word.replace(pattern, recovered) + " ";
             }
         }
 
