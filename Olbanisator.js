@@ -62,13 +62,26 @@ class Olbanisator {
             "когда" : "какда",
             "шься" : "шса",
             "получи" : "палучи",
-            "все" : "всьо",
+            "все$" : "всьо",
             "всё" : "всьо",
             "сейчас" : "чичас",
             "жела" : "жила",
             "интерес" : "интирес",
             "игро" : "игра",
             "по" : "па",
+            "тью" : "тю",
+            "рушит" : "рушет",
+            "работ" : "робот",
+            "отношен" : "атнашен",
+            "сказат" : "скозат",
+            "нет$" : "нит",
+            "хотит" : "хатит",
+            "ча" : "чя",
+            "может" : "можит",
+            "во$" : "ва",
+            "аспект" : "оспект",
+            "сегодн" : "сиводн",
+            "выбир" : "выбер",
         };
     }
 
@@ -113,8 +126,12 @@ class Olbanisator {
 
     _recoverPrint(print, word) {
         let result = "";
-        if (print.length !== word.length) {
+        if (print.length > word.length) {
             print = print.substring(0, word.length);
+        } else if (print.length < word.length) {
+            for (let i in [word.length - print.length]) {
+                print += '0';
+            }
         }
         for (let i = 0; i < print.length; i++) {
             switch (print[i]) {
