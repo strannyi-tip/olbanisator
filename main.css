@@ -33,3 +33,23 @@ button {
     margin-top: 10px;
     cursor: pointer;
 }
+
+#copy {
+    margin-left: 5px;
+    color: rgb(66, 66, 66);
+    background-color: lightgray;
+}
+
+#success_text {
+    float: left;
+    padding: 3px;
+    border-radius: 3px;
+    border: none;
+    color: rgb(66, 66, 66);
+    background-color: lightgray;
+    cursor: pointer;
+    font-size: 8pt;
+    display: none;
+    margin-left: 5px;
+    margin-top: 10px;
+}
