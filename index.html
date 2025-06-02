@@ -12,13 +12,15 @@
         <script type="text/javascript" src="main.js"></script>
     </head>
     <body>
-        <div class="container container-fluid">
-            <div class="col col-lg-10 offset-lg-1 col-md-12 col-sm-12>
-                <textarea id="input" placeholder="Введите сюда человеческий текст"></textarea>
-                <textarea id="output" disabled></textarea>
-                <button id="action">Олбанизировать</button>
-                <button id="copy"><span class="fa-regular fa-copy"></span></button>
-                <div id="success_text">Скопировано!</div>    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-md-10 col-sm-12 mx-auto container-decor mt-5">
+                    <textarea id="input" placeholder="Введите сюда человеческий текст" class="form-control form-control-sm float-start mt-2"></textarea>
+                    <textarea id="output" disabled class="form-control form-control-sm float-start mt-2"></textarea>
+                    <button id="action" class="btn btn-success float-start mt-2">Олбанизировать</button>
+                    <button id="copy" class="btn btn-default float-start mt-2"><span class="fa-regular fa-copy"></span></button>
+                    <div id="success_text">Скопировано!</div>
+                </div>
             </div>
         </div>
     </body>
