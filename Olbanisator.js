@@ -64,6 +64,7 @@ class Olbanisator {
             "все" : "всьо",
             "всё" : "всьо",
             "сейчас" : "чичас",
+            "вместе" : "вмести",
         };
     }
 
@@ -90,7 +91,7 @@ class Olbanisator {
             if (word.match(pattern)) {
                 const recovered = this._recoverPrint(print, replacement);
 
-                return word.replace(pattern, recovered) + " ";
+                word.replace(pattern, recovered) + " ";
             }
         }
 
