@@ -4,12 +4,12 @@ html, body {
 
 .container {
     float: left;
-    width: 50vw;
+    width: 80%;
     height: auto;
     padding: 20px;
     background-color: white;
     box-shadow: 0 0  3px darkgray;
-    margin: 5vw 45vh;
+    margin: 5% 10%;
 }
 
 textarea {
